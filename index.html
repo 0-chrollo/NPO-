@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Safe Space Foundation</title>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="your_emailjs_user_id.js"></script>
+    
+  </head>
+    <body>
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <div class="logo-icon"><br><u>
+            AL<br></u>
+          </div>
+          <span class="logo-text">NPO</span>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+        </nav>
+      </div>
+    </header>
+    
+    <section id="hero">
+      <div class="hero-content">
+        <h2> <span style='color: blue;'>C</span><span style="color:black;">reating a</span> <span style='color:orange;'>S</span><span style="color:black;">afe <span style='color: red;'>S</span>pace for <span style='color: rgb(45, 243, 45);'>E</span>veryone</span></h2>
+        <p style='color: black;'>We provide a safe and confidential space for those who need someone to talk to.</p>
+        <a href="#contact" class="btn">Contact Us</a>
+      </div>
+    </section>
+    
+    <section id="about" onclick="startTyping()">
+        <div class="container">
+          <h2>About Us</h2>
+          <p></p>
+         
+        </div>
+      </section>
+      
+      <script>
+        var isTyping = false;
+        
+        function startTyping() {
+          if (isTyping) {
+            return; // return early if animation is already in progress
+          }
+          
+          var aboutText = [
+            "We are a non-profit organization dedicated to providing a safe and supportive environment for individuals who are facing challenges in their lives.",
+            "Our mission is to create a community where everyone can feel heard, valued, and respected, regardless of their background or circumstances.",
+            "We offer a range of services, including counseling, support groups, and educational resources to help individuals overcome their challenges and lead fulfilling lives."
+          ];
+      
+          var currentIndex = 0;
+          var currentText = "";
+          var letterIndex = 0;
+          var typing = true;
+      
+          isTyping = true; // set flag to indicate animation is in progress
+          
+          function type() {
+            if (letterIndex < aboutText[currentIndex].length && typing) {
+              currentText += aboutText[currentIndex].charAt(letterIndex);
+              $("#about p").text(currentText);
+              letterIndex++;
+              setTimeout(type, 45);
+            } else {
+              typing = false;
+              setTimeout(erase, 2000);
+            }
+          }
+      
+          function erase() {
+            if (letterIndex > 0 && !typing) {
+              currentText = currentText.slice(0, -1);
+              $("#about p").text(currentText);
+              letterIndex--;
+              setTimeout(erase, 19);
+            } else {
+              currentIndex++;
+              if (currentIndex >= aboutText.length) {
+                currentIndex = 0;
+              }
+              currentText = "";
+              letterIndex = 0;
+              typing = true;
+              setTimeout(type, 1000);
+            }
+          }
+      
+          type();
+        }
+        
+        $("#about-button").on("click", startTyping);
+      </script>
+      
+      
+      
+    
+    <section id="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Counseling</li>
+          <li>Support Groups</li>
+          <li>Educational Resources</li>
+          <li>Sanitary Products for Girls</li>
+          <li>Baby Essentials for Teen Moms</li>
+          <li>Assistance for Child Headed Homes</li>
+        </ul>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section about">
+              <h3 align="center"><u>Reach us:</u></h3>
+              <p align="center">Also reach us on these platforms below.</p><br>
+              <div align="center" class="R">
+                <a href="https://www.facebook.com/myfacebookpage"><i class="fa fa-facebook-square" style="font-size:38px; margin-right: 18px;"></i></a>
+                <a href="https://twitter.com/mytwitter"><i class="fa fa-twitter-square" style="font-size:38px; margin-right: 18px;"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=0720760261"><i class="fa fa-whatsapp" style="font-size:38px;"></i></a> 
+              </div>
+              
+            </div>
+            
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    
+            <script src="script.js"></script>
+              </body>
+            </html>
