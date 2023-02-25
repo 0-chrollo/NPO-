@@ -317,7 +317,7 @@ text-decoration: underline;
     color: #0065ff;
   }
    /* Add responsive styles for screens smaller than 768px */
-   @media (max-width: 768px) {
+   @media (max-width: 480px) {
     /* Change the width of the container */
     .container {
       width: 90%;
@@ -338,4 +338,10 @@ text-decoration: underline;
     .logo-icon {
       display: none;
     }
+    .logo {
+      width: 100px;
+      height: 50px;
+    }
+  
+    
   }
