@@ -339,15 +339,14 @@ text-decoration: underline;
       display: none;
     }
     .logo {
+      max-width: 50%;
+      height: auto;
+    }
+    
+    .logo {
       max-width: 100%;
       height: auto;
     }
     
-    @media only screen and (max-width: 380) {
-      /* CSS rules for screens smaller than 768px */
-      .logo {
-        max-width: 50%;
-      }
-    }
     
   }
