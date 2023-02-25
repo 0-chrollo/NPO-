@@ -280,14 +280,14 @@ text-decoration: underline;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    background-color: #0065ff;
-    color: #fff;
-    font-weight: bold;
+    background-color: #0065ff; /* Change the background color to blue */
     margin-right: 10px;
+    font-size: 24px;
   }
+  
   
   .logo-text {
     font-size: 28px;
@@ -317,67 +317,57 @@ text-decoration: underline;
     color: #0065ff;
   }
    /* Add responsive styles for screens smaller than 768px */
-   @media (max-width: 480px) {
-    /* Change the width of the container */
-    .container {
-      width: 90%;
-    }
-    
-    /* Make the header and footer responsive */
-    header, footer {
-      padding: 10px;
-      text-align: center;
-    }
-    
-    /* Adjust the font size for smaller screens */
-    h1 {
-      font-size: 24px;
-    }
-    
-    /* Hide the logo icon for smaller screens */
-    .logo-icon {
-      display: none;
-    }
-   /* Default styles for the logo */
-.logo {
-  display: flex;
-  align-items: center;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  text-decoration: none;
-}
-   }
+@media (max-width: 480px) {
+  /* Change the width of the container */
+  .container {
+    width: 90%;
+  }
 
-.logo-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color:rgb(10, 10, 163);
-  margin-right: 10px;
-  font-size: 24px;
-}
+  /* Make the header and footer responsive */
+  header, footer {
+    padding: 10px;
+    text-align: center;
+  }
 
-.logo-text {
-  font-size: 24px;
-  font-weight: bold;
-  color: #000;
-}
+  /* Adjust the font size for smaller screens */
+  h1 {
+    font-size: 24px;
+  }
 
-/* Media query for smaller screens */
-@media only screen and (max-width: 360px) {
+  /* Hide the logo icon for smaller screens */
+  .logo-icon {
+    display: none;
+  }
+
+  /* Default styles for the logo */
   .logo {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    text-decoration: none;
   }
 
-  .logo-icon {
-    margin-right: 1;
+  /* Styles for the logo icon on smaller screens */
+  .logo-icon-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #0065ff;
     margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  /* Styles for the logo text on smaller screens */
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
   }
 }
-   
