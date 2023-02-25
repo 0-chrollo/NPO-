@@ -343,7 +343,7 @@ text-decoration: underline;
       height: auto;
     }
     
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 380) {
       /* CSS rules for screens smaller than 768px */
       .logo {
         max-width: 50%;
