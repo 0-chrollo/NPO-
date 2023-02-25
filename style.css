@@ -356,7 +356,7 @@ text-decoration: underline;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color:blue;
+  background-color:rgb(10, 10, 163);
   margin-right: 10px;
   font-size: 24px;
 }
