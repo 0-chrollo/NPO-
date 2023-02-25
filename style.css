@@ -347,6 +347,7 @@ text-decoration: underline;
   object-fit: contain;
   text-decoration: none;
 }
+   }
 
 .logo-icon {
   display: flex;
@@ -379,4 +380,4 @@ text-decoration: underline;
     margin-bottom: 10px;
   }
 }
-   }
+   
