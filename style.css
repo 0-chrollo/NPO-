@@ -338,28 +338,45 @@ text-decoration: underline;
     .logo-icon {
       display: none;
     }
-    /* Default styles for the logo */
-  }
-  /* Media query for smaller screens */
-@media only screen and (max-width: 360px) {
+   /* Default styles for the logo */
+.logo {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  text-decoration: none;
+}
+
+.logo-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 480px) {
   .logo {
-    width: 60px;
-    height: 60px;
-    font-size: 18px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+
   .logo-icon {
-    display: block;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    font-size: 24px;
-    line-height: 60px;
-    margin-right: 10px;
-  }
-  .logo-text {
-    font-size: 16px;
+    margin-right: 0;
+    margin-bottom: 10px;
   }
 }
+   }
