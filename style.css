@@ -271,6 +271,7 @@ text-decoration: underline;
   .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: #333;
   }
@@ -321,23 +322,23 @@ text-decoration: underline;
     .container {
       width: 90%;
     }
-    
+  
     /* Make the header and footer responsive */
     header, footer {
       padding: 10px;
       text-align: center;
     }
-    
+  
     /* Adjust the font size for smaller screens */
     h1 {
       font-size: 24px;
     }
-    
+  
     /* Hide the logo icon for smaller screens */
     .logo-icon {
       display: none;
     }
-    
+  
     /* Default styles for the logo */
     .logo {
       display: flex;
@@ -346,13 +347,6 @@ text-decoration: underline;
       height: auto;
       object-fit: contain;
       text-decoration: none;
-    }
-    
-    .logo-text {
-      font-size: 24px;
-      font-weight: bold;
-      color: #000;
-      margin: 0 auto;
     }
   }
   
